@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: haseforge
+Version: 0.1.0
+Summary: Robot arm control framework with web server and GPIO control
+Author: dein name
+Project-URL: Homepage, https://github.com/catrick-cpu/haseforge
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: colorama
+Requires-Dist: pyfiglet
+Dynamic: license-file
+
+# 🐰 HaseForge
+
+HaseForge ist ein Python-Framework zur Steuerung eines Roboterarms mit:
+
+- ⚙️ Stepper-Motor Steuerung (GPIO / Raspberry Pi)
+- 🌐 Webserver (Flask UI)
+- 🎮 Manual Control Interface
+- 📐 Inverse Kinematik (2-Achs Arm)
+- 📊 Status & Debug Dashboard
+- 🧪 Windows-Compatibility Mode (GPIO Mock)
+
+---
+
+# 🚀 Features
+
+✔ Web UI Steuerung  
+✔ Login System  
+✔ Echtzeit Motorsteuerung  
+✔ Koordinatenbasierte Bewegung  
+✔ Manual Control (Arrow UI)  
+✔ Debug Logs  
+✔ Konfigurierbare Arm-Länge  
+✔ Stepper Motor Simulation / GPIO Support  
+
+---
+
+# 📦 Installation
+
+## Via PyPI (später)
+
+```bash
+pip install haseforge

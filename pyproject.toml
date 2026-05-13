@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "haseforge"
+version = "0.1.0"
+description = "Robot arm control framework with web server and GPIO control"
+authors = [{ name = "dein name" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "flask",
+    "colorama",
+    "pyfiglet"
+]
+
+[project.urls]
+Homepage = "https://github.com/catrick-cpu/haseforge"
