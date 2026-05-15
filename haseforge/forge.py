@@ -38,32 +38,31 @@ class HaseForge:
         self.gpio_error = 1
         self.log_buffer = []
 
-    # 🚀 INIT SYSTEM
+
     def init(self):
         banner("HASEFORGE ROBOT ARM")
         self.gpio_error = init_gpio()
         log("HaseForge ready 🔧")
 
-    # 📜 LOGGING
+
     def log(self, msg):
         log(msg)
         self.log_buffer.append(msg)
         if len(self.log_buffer) > 100:
             self.log_buffer.pop(0)
 
-    # 🧠 IK
+
     def calc_angles(self, x, z):
         return calc_angles(x, z, self.L1, self.L2)
 
-    # ⚙️ STEP MOTOR
+
     def step(self, step_pin, dir_pin, direction):
         step_motor(step_pin, dir_pin, direction, self.gpio_error)
 
-    # 🎯 EASING (original behalten)
+
     def ease_in_out(self, t):
         return 0.5 - 0.5 * m.cos(m.pi * t)
 
-    # 🌐 SERVER START
 
     def run(self):
         app = create_server(self)
